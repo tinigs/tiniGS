@@ -1,0 +1,126 @@
+/************************** tiniGS ****************************/
+
+/* Set your own maximum width here */
+.row{max-width: 1200px;}
+
+/* Stops padding adding to width therefore breaking the grid http://paulirish.com/2012/box-sizing-border-box-ftw/*/
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
+/* Force scroll bars to stop centering issues *more of a preference* */
+html{overflow-y:scroll}
+
+/* Fluidity Core */
+.container{width: 100%; clear: both;}
+.row{width: 94%; margin: 0 auto; clear:both; overflow: hidden;}
+.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11 {float: left; margin-left: 2%; display: inline; position: relative;}
+.row .col1:first-child,.row .col2:first-child,.row .col3:first-child,.row .col4:first-child,.row .col5:first-child,.row .col6:first-child,.row .col7:first-child,.row .col8:first-child,.row .col9:first-child,.row .col10:first-child,.row .col11:first-child,.row .col12:first-child{margin-left:0}
+.col1{width: 6.5%;}
+.col2{width: 15%;}
+.col3{width: 23.5%;}
+.col4{width: 32%;}
+.col5{width: 40.5%;}
+.col6{width: 49%;}
+.col7{width: 57.5%;}
+.col8{width: 66%;}
+.col9{width: 74.5%;}
+.col10{width: 83%;}
+.col11{width: 91.5%;}
+.col12{width: 100%; overflow:hidden;}
+
+/* Prefix - Spacing Before Column */
+.pre1{margin-left: 8.5% !important}
+.pre2{margin-left: 17% !important}
+.pre3{margin-left: 25.5% !important}
+.pre4{margin-left: 34% !important}
+.pre5{margin-left: 42.5% !important}
+.pre6{margin-left: 51% !important}
+.pre7{margin-left: 59.5% !important}
+.pre8{margin-left: 68% !important}
+.pre9{margin-left: 76.5% !important}
+.pre10{margin-left: 85% !important}
+.pre11{margin-left: 93.5% !important}
+
+/* Suffix - Spacing After Column */
+.suf1{margin-right: 8.5%}
+.suf2{margin-right: 17%}
+.suf3{margin-right: 25.5%}
+.suf4{margin-right: 34%}
+.suf5{margin-right: 42.5%}
+.suf6{margin-right: 51%}
+.suf7{margin-right: 59.5%}
+.suf8{margin-right: 68%}
+.suf9{margin-right: 76.5%}
+.suf10{margin-right: 85%}
+.suf11{margin-right: 93.5%}
+
+/* Push - Move To The Right */
+.push1{ left: 8.5%; }
+.push2{ left: 17%; }
+.push3{ left: 25.5%; }
+.push4{ left: 34%; }
+.push5{ left: 42.5%; }
+.push6{ left: 51%; }
+.push7{ left: 59.5%; }
+.push8{ left: 68%; }
+.push9{ left: 76.5%; }
+.push10{ left: 86%; }
+.push11{ left: 93.5%; }
+
+/* Pull - Move To The Left */
+.pull1{ left: -8.5%; }
+.pull2{ left: -17%; }
+.pull3{ left: -25.5%; }
+.pull4{ left: -34%; }
+.pull5{ left: -42.5%; }
+.pull6{ left: -51%; }
+.pull7{ left: -59.5%; }
+.pull8{ left: -68%; }
+.pull9{ left: -76.5%; }
+.pull10{ left: -86%; }
+.pull11{ left: -93.5%; }
+
+
+/* Images */
+img,object{ max-width: 100%; height: auto; }
+
+/* Misc */
+.hide{ display: none; }
+
+/* Media Queries */
+
+/* Mac Book 1280px */
+/* iPad Land 1024px */
+/* iPad Port 768px */
+/* iPhone Land 480px */
+/* iPhone Port 320px */
+
+@media handheld, only screen and (max-width: 768px) {
+	
+	.row{width:98%;}
+	.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11 {display: block;float: none;width:100%; margin-left:0; margin-right:0; left: auto;}
+	/* Sub Columns */
+	.col1 .col1,.col2 .col1,.col3 .col1,.col4 .col1,.col5 .col1,.col6 .col1,.col7 .col1,.col8 .col1,.col9 .col1,.col10 .col1,.col11 .col1,.col12 .col1{float: left;margin-left: 2%;display: inline;position: relative;width: 6.5%;}
+	.col1 .col2,.col2 .col2,.col3 .col2,.col4 .col2,.col5 .col2,.col6 .col2,.col7 .col2,.col8 .col2,.col9 .col2,.col10 .col2,.col11 .col2,.col12 .col2{float: left;margin-left: 2%;display: inline;position: relative;width: 15%;}
+	.col1 .col3,.col2 .col3,.col3 .col3,.col4 .col3,.col5 .col3,.col6 .col3,.col7 .col3,.col8 .col3,.col9 .col3,.col10 .col3,.col11 .col3,.col12 .col3{float: left;margin-left: 2%;display: inline;position: relative;width: 23.5%;}
+	.col1 .col4,.col2 .col4,.col3 .col4,.col4 .col4,.col5 .col4,.col6 .col4,.col7 .col4,.col8 .col4,.col9 .col4,.col10 .col4,.col11 .col4,.col42 .col4{float: left;margin-left: 2%;display: inline;position: relative;width: 32%;}
+	.col1 .col5,.col2 .col5,.col3 .col5,.col4 .col5,.col5 .col5,.col6 .col5,.col7 .col5,.col8 .col5,.col9 .col5,.col10 .col5,.col11 .col5,.col52 .col5{float: left;margin-left: 2%;display: inline;position: relative;width: 40.5%;}
+	.col1 .col6,.col2 .col6,.col3 .col6,.col4 .col6,.col5 .col6,.col6 .col6,.col7 .col6,.col8 .col6,.col9 .col6,.col10 .col6,.col11 .col6,.col62 .col6{float: left;margin-left: 2%;display: inline;position: relative;width: 49%;}
+	.col1 .col7,.col2 .col7,.col3 .col7,.col4 .col7,.col5 .col7,.col6 .col7,.col7 .col7,.col8 .col7,.col9 .col7,.col10 .col7,.col11 .col7,.col72 .col7{float: left;margin-left: 2%;display: inline;position: relative;width: 57.5%;}
+	.col1 .col8,.col2 .col8,.col3 .col8,.col4 .col8,.col5 .col8,.col6 .col8,.col7 .col8,.col8 .col8,.col9 .col8,.col10 .col8,.col11 .col8,.col82 .col8{float: left;margin-left: 2%;display: inline;position: relative;width: 66%;}
+	.col1 .col9,.col2 .col9,.col3 .col9,.col4 .col9,.col5 .col9,.col6 .col9,.col7 .col9,.col8 .col9,.col9 .col9,.col10 .col9,.col11 .col9,.col12 .col9{float: left;margin-left: 2%;display: inline;position: relative;width: 74.5%;}
+	.col1 .col10,.col2 .col10,.col3 .col10,.col4 .col10,.col5 .col10,.col6 .col10,.col7 .col10,.col8 .col10,.col9 .col10,.col10 .col10,.col11 .col10,.col12 .col10{float: left;margin-left: 2%;display: inline;position: relative;width: 83%;}
+	.col1 .col11,.col2 .col11,.col3 .col11,.col4 .col11,.col5 .col11,.col6 .col11,.col7 .col11,.col8 .col11,.col9 .col11,.col10 .col11,.col11 .col11,.col12 .col11{float: left;margin-left: 2%;display: inline;position: relative;width: 91.5%;}
+	/* Sub Columns First Children */
+	.col1 .col1:first-child,.col2 .col1:first-child,.col3 .col1:first-child,.col4 .col1:first-child,.col5 .col1:first-child,.col6 .col1:first-child,.col7 .col1:first-child,.col8 .col1:first-child,.col9 .col1:first-child,.col10 .col1:first-child,.col11 .col1:first-child,.col12 .col1:first-child{margin-left:0;}
+	.col1 .col2:first-child,.col2 .col2:first-child,.col3 .col2:first-child,.col4 .col2:first-child,.col5 .col2:first-child,.col6 .col2:first-child,.col7 .col2:first-child,.col8 .col2:first-child,.col9 .col2:first-child,.col10 .col2:first-child,.col11 .col2:first-child,.col12 .col2:first-child{margin-left:0;}
+	.col1 .col3:first-child,.col2 .col3:first-child,.col3 .col3:first-child,.col4 .col3:first-child,.col5 .col3:first-child,.col6 .col3:first-child,.col7 .col3:first-child,.col8 .col3:first-child,.col9 .col3:first-child,.col10 .col3:first-child,.col11 .col3:first-child,.col12 .col3:first-child{margin-left:0;}
+	.col1 .col4:first-child,.col2 .col4:first-child,.col3 .col4:first-child,.col4 .col4:first-child,.col5 .col4:first-child,.col6 .col4:first-child,.col7 .col4:first-child,.col8 .col4:first-child,.col9 .col4:first-child,.col10 .col4:first-child,.col11 .col4:first-child,.col42 .col4:first-child{margin-left:0;}
+	.col1 .col5:first-child,.col2 .col5:first-child,.col3 .col5:first-child,.col4 .col5:first-child,.col5 .col5:first-child,.col6 .col5:first-child,.col7 .col5:first-child,.col8 .col5:first-child,.col9 .col5:first-child,.col10 .col5:first-child,.col11 .col5:first-child,.col52 .col5:first-child{margin-left:0;}
+	.col1 .col6:first-child,.col2 .col6:first-child,.col3 .col6:first-child,.col4 .col6:first-child,.col5 .col6:first-child,.col6 .col6:first-child,.col7 .col6:first-child,.col8 .col6:first-child,.col9 .col6:first-child,.col10 .col6:first-child,.col11 .col6:first-child,.col62 .col6:first-child{margin-left:0;}
+	.col1 .col7:first-child,.col2 .col7:first-child,.col3 .col7:first-child,.col4 .col7:first-child,.col5 .col7:first-child,.col6 .col7:first-child,.col7 .col7:first-child,.col8 .col7:first-child,.col9 .col7:first-child,.col10 .col7:first-child,.col11 .col7:first-child,.col72 .col7:first-child{margin-left:0;}
+	.col1 .col8:first-child,.col2 .col8:first-child,.col3 .col8:first-child,.col4 .col8:first-child,.col5 .col8:first-child,.col6 .col8:first-child,.col7 .col8:first-child,.col8 .col8:first-child,.col9 .col8:first-child,.col10 .col8:first-child,.col11 .col8:first-child,.col82 .col8:first-child{margin-left:0;}
+	.col1 .col9:first-child,.col2 .col9:first-child,.col3 .col9:first-child,.col4 .col9:first-child,.col5 .col9:first-child,.col6 .col9:first-child,.col7 .col9:first-child,.col8 .col9:first-child,.col9 .col9:first-child,.col10 .col9:first-child,.col11 .col9:first-child,.col92 .col9:first-child{margin-left:0;}
+	.col1 .col10:first-child,.col2 .col10:first-child,.col3 .col10:first-child,.col4 .col10:first-child,.col5 .col10:first-child,.col6 .col10:first-child,.col7 .col10:first-child,.col8 .col10:first-child,.col9 .col10:first-child,.col10 .col10:first-child,.col11 .col10:first-child,.col12 .col10:first-child{margin-left:0;}
+	.col1 .col11:first-child,.col2 .col11:first-child,.col3 .col11:first-child,.col4 .col11:first-child,.col5 .col11:first-child,.col6 .col11:first-child,.col7 .col11:first-child,.col8 .col11:first-child,.col9 .col11:first-child,.col10 .col11:first-child,.col11 .col11:first-child,.col12 .col11:first-child{margin-left:0;}
+
+}
+
